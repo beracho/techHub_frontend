@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <app-header></app-header>
-    <section class="app-main">
-      <router-view />
-    </section>
-    <app-footer></app-footer>
+    <v-app>
+      <app-header></app-header>
+      <section class="app-main">
+        <router-view />
+      </section>
+      <app-footer></app-footer>
+    </v-app>
   </div>
 </template>
 
@@ -19,6 +21,10 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+@import './assets/stylus/vuetify.styl';
+</style>
 
 <style lang="scss">
 @import 'assets/scss/main.scss';
